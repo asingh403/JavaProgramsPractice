@@ -6,12 +6,6 @@
 package com.java.imp.prgms;
 
 import java.util.Arrays;
-/**
- * How Many Numbers Are Smaller Than the Current Number
- * LeetCode Id: 1365
- *
- */
-
 
 public class SmallerNumThanCurrent {
 
