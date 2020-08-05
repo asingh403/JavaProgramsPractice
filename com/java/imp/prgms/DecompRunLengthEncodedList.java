@@ -22,7 +22,7 @@ public class DecompRunLengthEncodedList {
 
 	public static int[] decompressRLElist(int[] nums) {
 		List<Integer> list = new ArrayList<>();
-		for (int i = 1; i < nums.length; i += 2) {
+		for (int i = 1; i < nums.length; i = i+ 2) { // i = i+2 or i += 2 are same
 			int freq = nums[i - 1];
 			while (freq > 0) {
 				list.add(nums[i]);
