@@ -31,8 +31,8 @@ public class DecompRunLengthEncodedList {
 		}
 		int[] arr = new int[list.size()];
 
-		for (int i = 0; i < list.size(); i++)
-			arr[i] = list.get(i);
+		for (int count = 0; count < list.size(); count++)
+			arr[count] = list.get(count);
 		return arr;
 	}
 
