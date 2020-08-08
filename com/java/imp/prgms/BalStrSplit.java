@@ -19,7 +19,7 @@ package com.java.imp.prgms;
 public class BalStrSplit {
 
 	public static void main(String[] args) {
-		String str = "RLRRLLRLRL";
+		String str = "RLRL";           //RLRRLLRLRL
 		BalStrSplit o = new BalStrSplit();
 		int result = o.balancedStringSplit(str);
 		System.out.println(result);
