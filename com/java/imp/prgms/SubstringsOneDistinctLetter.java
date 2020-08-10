@@ -21,9 +21,6 @@ package com.java.imp.prgms;
 * Output: 55
 **/
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class SubstringsOneDistinctLetter {
 
 	public static void main(String[] args) {
@@ -39,12 +36,12 @@ public class SubstringsOneDistinctLetter {
 	public int countLetters(String S) {
 		int start = 0;
 		int end = 0;
-		Map<Character, Integer> map = new HashMap<>();
+
 		int count = 0;
 		int n = S.length();
 		while (end < n) {
-			char c = S.charAt(end);
-			while (end < n && S.charAt(end) == c) {
+			char ch = S.charAt(end);
+			while (end < n && S.charAt(end) == ch) {
 				end++;
 			}
 			int temp = end - start;
