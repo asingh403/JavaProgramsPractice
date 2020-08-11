@@ -25,8 +25,8 @@ public class SubstringsOneDistinctLetter {
 
 	public static void main(String[] args) {
 		
-		//String str = "aaaba"; // result  will be 8
-		String str = "aaaaaaaaaa"; // result  will be 55 
+		String str = "aaaba"; // result  will be 8
+		//String str = "aaaaaaaaaa"; // result  will be 55 
 		
 		SubstringsOneDistinctLetter o = new SubstringsOneDistinctLetter();
 		
@@ -41,12 +41,15 @@ public class SubstringsOneDistinctLetter {
 		int n = S.length();
 		while (end < n) {
 			char ch = S.charAt(end);
+			
 			while (end < n && S.charAt(end) == ch) {
 				end++;
 			}
 			int temp = end - start;
 			start = end;
-			count += temp * (temp + 1) / 2;
+			//count += temp * (temp + 1) / 2;
+			count = count + (temp * (temp + 1) / 2);
+			
 		}
 		return count;
 	}
