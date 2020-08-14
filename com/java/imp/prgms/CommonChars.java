@@ -17,7 +17,8 @@ import java.util.List;
 public class CommonChars {
 
 	public static void main(String[] args) {
-		String[] str = { "bella", "label", "roller" };
+		//String[] str = { "bella", "label", "roller" };
+		String[] str = { "aabd", "ab", "a" };
 
 		CommonChars commonCharsObj = new CommonChars();
 		List<String> result = commonCharsObj.commonChars(str);
