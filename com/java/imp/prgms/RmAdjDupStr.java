@@ -1,8 +1,6 @@
 /**
 * Remove All Adjacent Duplicates In String
 * LeetCode id: 1047
-* 
-* Sort the array so that whenever A[i] is odd, i is odd; and whenever A[i] is even, i is even.
 *
 * Example 1:
 * Input: "abbaca"
