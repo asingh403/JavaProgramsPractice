@@ -11,15 +11,16 @@
 
 package com.java.imp.prgms;
 
+import java.util.Arrays;
+
 public class ReverseStringArray {
 
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) 
+	{	
 		char [] str = { 'h', 'e', 'l', 'l', 'o'};
-		
-		System.out.println(reverseString(str));
-		}
-
+		System.out.println(Arrays.toString(reverseString(str)));
+	}
+	
 	public static char [] reverseString(char[] s) {
 		int i = 0, j = s.length - 1;
 
@@ -30,5 +31,4 @@ public class ReverseStringArray {
 		}
 		return s;
 	}
-
 }
