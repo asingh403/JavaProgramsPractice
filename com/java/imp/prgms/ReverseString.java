@@ -1,7 +1,5 @@
 package com.java.imp.prgms;
 
-import java.util.Arrays;
-
 public class ReverseString {
 
 	public static void main(String[] args) {
@@ -25,7 +23,5 @@ public class ReverseString {
 			ch[j--] = temp;
 		}
 		return ch;
-		
 	}
-
 }
