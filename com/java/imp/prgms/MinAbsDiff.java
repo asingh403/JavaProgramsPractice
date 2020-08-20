@@ -20,10 +20,16 @@ public class MinAbsDiff {
 	public static void main(String[] args) {
 		int [] n = {4, 2, 1, 3};
 		
-		System.out.println(minimumAbsDifference(n));	
+		List<List<Integer>> result = new ArrayList<List<Integer>>();
+
+		MinAbsDiff madObj = new MinAbsDiff();
+		
+		result = madObj.minimumAbsDifference(n);
+		
+		System.out.println(result);	
 	}
 
-	public static List<List<Integer>> minimumAbsDifference(int[] arr) {
+	public List<List<Integer>> minimumAbsDifference(int[] arr) {
 		Arrays.sort(arr);
 
 		List<List<Integer>> out = new ArrayList<List<Integer>>();
@@ -47,7 +53,6 @@ public class MinAbsDiff {
 				out.add(temp);
 			}
 		}
-
 		return out;
 	}
 
