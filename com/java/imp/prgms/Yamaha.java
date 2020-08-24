@@ -24,11 +24,11 @@ public class Yamaha {
 			if (String.valueOf(input.charAt(i)).equals("a")) {
 
 				for (int j = 0; j < count; j++)
-					output = output + 'a';
-				count = count + 2;
+					output += 'a';
+				count += 2;
 
 			} else
-				output = output + input.charAt(i);
+				output += input.charAt(i);
 		}
 		return output;
 	}
